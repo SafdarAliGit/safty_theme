@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "creation": "2024-06-24 06:40:56.806525",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "report_type",
+  "report"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Report Type",
+   "options": "Report\nReport Menu",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.report_type == \"Report\"",
+   "fieldname": "report",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Report",
+   "options": "report_type",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-24 06:48:41.058156",
+ "modified_by": "Administrator",
+ "module": "Safty Theme",
+ "name": "Safty Navbar Item Settings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

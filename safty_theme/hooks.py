@@ -227,3 +227,21 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+website_context = {
+    "favicon": "/assets/safty_theme/images/sauce.png",
+    "splash_image": "/assets/safty_theme/images/sauce.png"
+}
+
+app_include_css = [
+    # "/assets/safty_theme/css/healthcare_theme_app.css"
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css",
+    "/assets/safty_theme/css/dashboard.css",
+    "/assets/safty_theme/css/form_view.css",
+    "/assets/safty_theme/css/sidebar.css",
+    "/assets/safty_theme/css/style.css"
+
+]
+web_include_css = [
+     "/assets/safty_theme/css/fairvalue_theme_web.css"
+
+]

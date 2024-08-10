@@ -1,0 +1,300 @@
+/****************** Dashboard ************************************/
+
+
+.card-body {
+    background-color: #fff;
+    border-radius: 16px;
+
+}
+
+.green-card {
+    background: var(--primary-color-1, #383085);
+}
+
+.card {
+    border-radius: 16px;
+    border: none;
+}
+
+.title-card {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title-white {
+    color: var(--white, #FFF);
+}
+
+.dash-static {
+    color: var(--white, #FFF);
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 8px !important;
+}
+
+.green-color {
+    color: var(--primary-color-1, #383085);
+}
+
+.rect-arrow {
+    width: 53px;
+    height: 27px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.17);
+
+}
+
+.rect-arrow img {
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.stat-percentage {
+    color: var(--white, #FFF);
+    font-size: 11px;
+    border-radius: 4px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 6px;
+
+}
+
+.green-percentage {
+    background: rgba(21, 119, 119, 0.16);
+}
+
+.green-per {
+    color: var(--primary-color-1, #383085);
+}
+
+.period-div {
+    min-width: 40px;
+    height: 16px;
+    border-radius: 4px;
+    background: var(--gray-001, #F9F9F9);
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px
+}
+
+.period-div span {
+    color: var(--gray-002, #9B9B9B);
+    font-size: 12px;
+}
+
+.col-md-3,
+.col-lg-3,
+.col-xl-3,
+.order-0,
+.mb-4 {
+    padding-right: 15px !important;
+}
+
+.ead-title {
+    color: var(--gray-004, #313131);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bold-green {
+    color: var(--primary-color-1, #383085);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+/****************************/
+.wrapper {
+    width: 600px;
+    border-radius: 50px;
+}
+
+.tabs {
+    margin: 1rem 0;
+    background: var(--gray-001, #F9F9F9);
+    height: 28rem;
+    position: relative;
+}
+
+.custom-tabs {
+    padding-right: 40px;
+    height: 100%;
+}
+
+.tab {
+    float: left;
+    width: 33.3%;
+}
+
+.tabs::before,
+.tabs::after {
+    content: "";
+    display: table;
+}
+
+.tabs::after {
+    clear: both;
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0;
+    background: var(--gray-001, #F9F9F9);
+    color: #696969;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+    margin-bottom: 0px !important;
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+}
+
+.tab-content-dashboard {
+    width: 100%;
+    height: 400px !important;
+    position: absolute;
+    z-index: 1;
+    top: 3.75em;
+    left: 0;
+    padding: 0px;
+    background: #fff;
+    color: #2c3e50;
+    opacity: 0;
+    transition: all 0.35s;
+    overflow-y: auto !important;
+}
+
+.tab-switch:checked + .tab-label {
+    background: var(--primary-color-1, #383085);
+    border-bottom: 0;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tab:first-child .tab-label {
+    border-radius: 8px 0px 0px 0px;
+
+}
+
+.tab:last-child .tab-label {
+    border-radius: 0px 8px 0px 0px;
+
+}
+
+.tab-switch:checked + label + .tab-content-dashboard {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+}
+
+.tab-ul-content {
+    float: left;
+    list-style-type: none;
+}
+
+.tab-ul-content li {
+    float: left;
+}
+
+.index {
+    color: var(--gray-003, #696969);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.name-color {
+    color: var(--gray-003, #696969);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.pos-color {
+    color: var(--gray-002, #9B9B9B);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.lable-button {
+    width: 75px;
+    height: 24px;
+    border-radius: 4px;
+    background: rgba(21, 119, 119, 0.16);
+    margin: 0 auto !important;
+}
+
+.lable-button span {
+    color: var(--primary-color-1, #383085);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+table th,
+table td {
+    text-align: center;
+}
+
+.col-sm-7 {
+    max-width: 55.33% !important;
+}
+
+.sales-chart {
+    background-color: #fff;
+    float: right;
+    border-radius: 16px;
+    margin: 1rem 0px;
+    border: 1px solid #eaeaea;
+
+}
+
+.tab-content-dashboard::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tab-content-dashboard::-webkit-scrollbar-thumb {
+    background-color: #383085;
+}
+
+#chart {
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+.apexcharts-menu-icon svg {
+    display: none;
+}
+
+/*image at logi page*/
+.page-card-head .app-logo {
+    max-width: 100%;
+    height: auto;
+}
+

@@ -1,0 +1,298 @@
+/* Colours */
+:root {
+    --primary-color: #e2dacf;
+    --primary-color-1: #708090;
+    --primary-color-2: #FFD700;
+    /* --field-color:#f2f2f2 */
+    --field-color: #FAF3E0;
+    --secondary-color: #7574ff;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --gray-color: #888;
+
+    --page-head-height: 50px;
+    --navbar-height: 50px;
+}
+
+#page-login .container {
+    max-width: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.background-login {
+  width: 50%;
+  height: 100vh;
+  float: right;
+  background-color: #fff;
+  position: relative;
+  background-image: url("/assets/safty_theme/images/Background_login.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+
+.background-login img ,.background-forget img{
+    width: 100%;
+    height: 100vh;
+
+}
+.background-forget{
+    width: 50%;
+    height: 100vh;
+    float: right;
+    background-color: #fff;
+    background-image:url("/assets/safty_theme/images/bg-forget.png");
+    background-repeat:no-repeat;
+    background-position: center; 
+}
+
+section {
+    width: 50%;
+    float: left;
+    padding: 0px !important;
+    background-color: #fff;
+}
+
+.login-content.page-card {
+    max-width: 100% !important;
+    height: 100vh;
+    padding: 0px !important;
+
+}
+
+.login-content.page-card .page-card-head {
+    float: left;
+    margin-bottom: 0px !important;
+    width: 100%;
+}
+
+.app-logo {
+    float: left;
+}
+
+.page-card-head h4 {
+    display: none;
+}
+
+.form-signin .form-login {
+    float: left;
+}
+
+.welcome-sec {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+.welcome-sec span {
+    color: var(--gray-004, #383085);
+    font-size: 28px;
+    font-weight: 500;
+    float: left;
+}
+
+.hand-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("/assets/safty_theme/images/hand-icon.png");
+    float: left;
+}
+
+.page-card-head img {
+    max-height: 49px !important;
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+}
+
+.welcome-sec p {
+    color: var(--gray-003, #383085);
+    font-size: 16px;
+    font-weight: 400;
+    clear: both;
+    float: left;
+}
+
+.for-login .page-card form,
+.for-forgot .page-card form,
+.for-login-with-email-link .page-card form,
+.for-signup .page-card form,
+.for-email-login .page-card form {
+    max-width: 100% !important;
+
+    float: left;
+}
+
+.input-title {
+    width: 100%;
+    float: left;
+}
+
+.input-title p {
+    color: var(--gray-004, #383085);
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+}
+
+.page-card-body {
+    width: 550px !important;
+}
+
+.toggle-password {
+    top: 62px !important;
+    right: 16px !important;
+}
+
+.for-login .page-card .page-card-body .forgot-password-message>* {
+
+    color: var(--primary-color-1, #383085) !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page-card-actions {
+    width: 100%;
+}
+
+.page-card-actions button {
+    width: 100%;
+    height: 56px !important;
+    border-radius: 8px;
+    background: var(--primary-color-1, #383085) !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.signup-now-div {
+    width: 100%;
+    float: left;
+    height: 50px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-now-div p {
+    color: var(--gray-002, #383085);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.signup-now-div p a {
+    color: var(--primary-color-1, #383085) !important;
+}
+.big-container {
+    width: 550px;
+    margin: 0 auto;
+    box-shadow: none !important;
+}
+
+.login-content.page-card {
+    box-shadow: none !important;
+}
+
+input.form-control {
+    height: 56px;
+    padding-left: 16px !important;
+}
+
+#page-app .page-card-body a {
+    background-color: #383085;
+}
+
+.forget-div {
+    width: 100%;
+    float: left;
+}
+
+.forget-div p {
+    color: var(--gray-004, #383085);
+    font-size: 30px;
+    font-weight: 500;
+}
+.forget-div span{
+    color: var(--gray-003, #383085);
+font-size: 16px;
+font-weight: 400;
+}
+.email-style{
+    color: var(--gray-004, #383085);
+font-size: 18px;
+font-weight: 500;
+padding-top: 32px;
+}
+.forget-bg{
+    height: 450px !important;
+   
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align:center;
+}
+@media screen and (max-width: 991px){
+    .background-login ,.background-forget{
+     display: none;
+    }
+    .for-login , .for-signup  , .for-forgot{
+        width: 100%;
+        float: initial;
+        margin: 0 auto;
+    }
+    .big-container{
+        margin: 0 auto !important;
+        float: initial;
+        width: 85%;
+    }
+    .login-content.page-card .page-card-head{
+        display: flex;
+        justify-content: center;
+    }
+    .for-login .page-card{
+        width: 100%;
+    }
+    .page-card-body{
+        width: 100% !important;
+    }
+    .for-login .page-card form , .for-forgot .page-card form , .for-signup .page-card form{
+        width: 100%;
+    }
+    .for-signup .welcome-sec span{
+        font-size: 23px !important;
+    }
+    
+}
+@media screen and (max-width: 320px){
+    .for-signup .welcome-sec span{
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+    .for-signup .hand-icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 375px){
+    .for-signup .hand-icon{
+        display: none;
+    }
+}
+.btn.btn-sm.btn-primary.btn-block.btn-login {
+  background-color: #383085 !important;
+}
+.btn.btn-block.btn-default.btn-sm.btn-login-option.btn-login-with-email-link {
+  padding: 10px;
+  background-color: #383085;
+  color: #383085;
+}
+#login_email {
+  background-color: #fff;
+  border: 1.3px solid #989696;
+}
+#login_password {
+    background-color: #fff;
+  border: 1.3px solid #989696;
+}

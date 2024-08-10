@@ -1,0 +1,106 @@
+
+<div id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+
+    <div class="app-brand demo">
+        <i class="fa fa-times close-icon" aria-hidden="true"></i>
+
+
+        <a href="/app/home" class="app-brand-link" id="logo">
+            <img src="/assets/safty_theme/images/suace.png" class="big-logo" alt="sauce-logo" />
+            <img src="/assets/safty_theme/images/suace.png" class="small-logo hidden"
+                alt="sauce-logo" />
+        </a>
+
+    </div>
+
+    <div class="toggle-btn-cont">
+        <span class="custom_btn_toggle"></span>
+    </div>
+
+<div style="padding-top: 17px;">
+    <div class="left_sidebar_menu custom-left-sidebar">
+
+        <div class="list-sidebar overlay-sidebar">
+            <div class="desk-sidebar list-unstyled sidebar-menu">
+
+                <div class="standard-sidebar-section nested-container" data-title="Public">
+                    <div class="sidebar-item-container is-draggable" item-parent="" item-name="Home" item-public="1"
+                        item-is-hidden="0">
+                        <a href="/app/home" class="item-anchor " title="Dashboard">
+
+                        <div class="desk-sidebar-item standard-sidebar-item selected">
+                                <span class="sidebar-item-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 11.01V4.89C21 3.54 20.424 3 18.993 3H15.357C13.926 3 13.35 3.54 13.35 4.89V11.01C13.35 12.36 13.926 12.9 15.357 12.9H18.993C20.424 12.9 21 12.36 21 11.01ZM21 19.11V17.49C21 16.14 20.424 15.6 18.993 15.6H15.357C13.926 15.6 13.35 16.14 13.35 17.49V19.11C13.35 20.46 13.926 21 15.357 21H18.993C20.424 21 21 20.46 21 19.11ZM10.65 12.99V19.11C10.65 20.46 10.074 21 8.643 21H5.007C3.576 21 3 20.46 3 19.11V12.99C3 11.64 3.576 11.1 5.007 11.1H8.643C10.074 11.1 10.65 11.64 10.65 12.99ZM10.65 4.89V6.51C10.65 7.86 10.074 8.4 8.643 8.4H5.007C3.576 8.4 3 7.86 3 6.51V4.89C3 3.54 3.576 3 5.007 3H8.643C10.074 3 10.65 3.54 10.65 4.89Z" stroke="#696969" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="sidebar-item-label">Dashboard
+                                </span>
+                        </div>
+                    </a>
+                    </div>
+
+
+                    {% if frappe.boot.sidebar_items %}
+                        {% for item in frappe.boot.sidebar_items %}
+
+                        <div class="sidebar-item-container" item-parent="" item-name="{{item.name}}" item-public="1"
+                            item-is-hidden="0">
+                                <a href="/app/{{item.route}}"class="menu-link sidebar-menu-link">
+
+                            <div class="desk-sidebar-item standard-sidebar-item ">
+
+                            <span class="sidebar-item-icon" icon-name="{{item.icon}}">
+                                        <svg class="icon icon-sm">
+                                            <use class="svg-icons" id="icon-{{item.icon}}" href="#icon-{{item.icon}}"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="sidebar-item-label" data-i18n="{{item.label || item.name}}">
+                                        {{ __(item.label) || __(item.name)}}
+                                    </span>
+
+
+                        </div>
+
+                    </a>
+                        {% if item.child_items.length > 0 %}
+                        <div class="nested-ddl-sidebar">
+                            <i class="fas fa-chevron-down" width="24px" height="24px" class="ai-headphones"></i>
+                        </div>
+                    {% endif %}
+                            {% for itm in item.child_items %}
+                                    <div class="sidebar-child-item nested-container hidden">
+                                        <div class="sidebar-item-container is-draggable" item-parent="{{item.name}}" item-name="{{itm.name}}"
+                                            item-public="1" item-is-hidden="0">
+                                            <a href="/app/{{itm.route}}" title="{{itm.name}}" id="{{itm.name}}" class="nested-menu-link">
+
+                                            <div class="desk-sidebar-item standard-sidebar-item ">
+                                                    <span class="sidebar-item-icon" item-icon="{{itm.icon}}">
+                                                        <span class="menu-icon sidebar-icon" icon-name="{{itm.name}}">
+                                                            {{ frappe.utils.icon(itm.icon || "folder-normal") }}
+                                                        </span>
+                                                    </span>
+
+                                                    <span class="sidebar-item-label" id="{{itm.name}}" data-i18n="{{itm.name}}">
+                                                        {{ __(itm.name) }}
+                                                    </span>
+
+                                            </div>
+                                        </a>
+
+                                        </div>
+                                    </div>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</div>

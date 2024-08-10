@@ -1,0 +1,1 @@
+document.getElementsByClassName("app-logo").src = "/assets/safty_theme/images/sauce.png";
