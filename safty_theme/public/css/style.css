@@ -1370,29 +1370,35 @@ td.fc-event-container a ,.fc-unthemed .fc-today .fc-day-number{
 
 
 
-/* Rainbow gradient background */
-/* Rainbow gradient background */
-.navbar.navbar-expand.sticky-top {
-  background: linear-gradient(220deg,
+/*!* Rainbow gradient background *!*/
+/*!* Rainbow gradient background *!*/
+/*.navbar.navbar-expand.sticky-top {*/
+/*  background: linear-gradient(220deg,*/
+/*  #eab077, !* Orange *! #59b6df, !* Blue *! #cecec9 !* Violet *!*/
+/*  );*/
+/*  color: white; !* Text color for contrast *!*/
+/*}*/
+
+/*!* Optional: Styling for text and other elements *!*/
+/*.navbar.navbar-expand.sticky-top .navbar-brand,*/
+/*.navbar.navbar-expand.sticky-top .navbar-nav .nav-link {*/
+/*  color: white; !* White text color for readability *!*/
+/*}*/
+
+/*.navbar.navbar-expand.sticky-top .navbar-toggler-icon {*/
+/*  background-color: white; !* White for toggle icon *!*/
+/*}*/
+
+/*!* Optional: Hover effects or additional styling *!*/
+/*.navbar.navbar-expand.sticky-top .navbar-nav .nav-link:hover {*/
+/*  color: #59b6df; !* Gold or another accent color *!*/
+/*}*/
+
+
+
+.navbar.navbar-expand {
+    background: linear-gradient(220deg,
   #eab077, /* Orange */ #59b6df, /* Blue */ #cecec9 /* Violet */
   );
   color: white; /* Text color for contrast */
 }
-
-/* Optional: Styling for text and other elements */
-.navbar.navbar-expand.sticky-top .navbar-brand,
-.navbar.navbar-expand.sticky-top .navbar-nav .nav-link {
-  color: white; /* White text color for readability */
-}
-
-.navbar.navbar-expand.sticky-top .navbar-toggler-icon {
-  background-color: white; /* White for toggle icon */
-}
-
-/* Optional: Hover effects or additional styling */
-.navbar.navbar-expand.sticky-top .navbar-nav .nav-link:hover {
-  color: #59b6df; /* Gold or another accent color */
-}
-
-
-
