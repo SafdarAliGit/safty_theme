@@ -1,3 +1,4 @@
+
 white.row {
   margin-left: 0px;
   margin-right: 0px;
@@ -1401,4 +1402,10 @@ td.fc-event-container a ,.fc-unthemed .fc-today .fc-day-number{
   #eab077, /* Orange */ #59b6df, /* Blue */ #cecec9 /* Violet */
   );
   color: white; /* Text color for contrast */
+}
+.standard-sidebar-section{
+  margin-left: 8%;
+}
+.ellipsis.title-text {
+  padding-left: 20px;
 }
